@@ -1,7 +1,7 @@
 var today = new Date();
 
 var timer = function() {};
-timer.countdownDate = new Date(2019, 0, 12);
+timer.countdownDate = new Date(2019, 3, 6);
 
 // set date to 10 days in the future for testing purposes
 //timer.countdownDate.setDate( timer.countdownDate.getDate() + 10 );
@@ -11,8 +11,8 @@ timer.countdownDate.setDate(timer.countdownDate.getDate());
 */
 timer.init = function() {
   timer.getReferences();
-  
-  
+
+
   timer.getTimes();
   setInterval(function() { timer.update() }, 1000);
 }
@@ -46,10 +46,10 @@ timer.update = function() {
   if ( timer.timer.style.opacity !== 1 ) {
     timer.timer.style.opacity = 1;
   }
-  
+
   timer.currentDate = new Date();
   timer.difference = timer.countdownDate - timer.currentDate;
-  
+
   timer.days.innerHTML = timer.getTimeRemaining(timer.times.day, 1);
   timer.hours.innerHTML = timer.getTimeRemaining(timer.times.hour, 24);
   timer.minutes.innerHTML = timer.getTimeRemaining(timer.times.minute, 60);
@@ -67,11 +67,11 @@ timer.getTimeRemaining = function( timeUnit, divisor ) {
   else {
     n = Math.floor((timer.difference / timeUnit) % divisor );
   }
-  
+
   if ( String(n).length < 2 ) {
     n = "0" + n;
   }
-  
+
   return n;
 }
 
