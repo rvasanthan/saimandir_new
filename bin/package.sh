@@ -3,14 +3,17 @@ echo "Packaging - Saimandir.org.."
 
 echo "Cleaning up.. "
 rm -rf ../release
-mkdir release
-chmod 755 release
+mkdir ../release
 
-cp ../* release/
-rm -rf release/bin
-rm -rf release/release
+cp -r ../css  ../release/
+cp -r ../vendors ../release/
+cp -r ../js ../release/
+cp -r ../scss ../release/
+cp -r ../fonts ../release/
+cp -r ../image ../release/  
+cp -r ../index.html ../release/
 
-#tar -cvf saimandir.tar ../*
-
+tar -cvf ../release/saimandir.tar ../release/*
+gzip ../release/saimandir.tar
 
 echo "Packaging Saimandir.org Completed successfully"
