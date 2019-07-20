@@ -146,6 +146,12 @@ button:focus {
   flex-direction: row-reverse;
 }
 
+.model_width {
+  max-width: 100%;
+  height: auto;
+  width: auto;
+}
+
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
 .btn_hover {
