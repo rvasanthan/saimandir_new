@@ -1,0 +1,20 @@
+var pics = [
+    "gp1.jpg",
+    "gp1.jpg",
+    "gp1.jpg",
+    "gp1.jpg",
+    "gp1.jpg",
+    "gp1.jpg",
+    "gp1.jpg",
+    "gp1.jpg",
+    "gp1.jpg",
+    "gp1.jpg",
+    "gp1.jpg",
+    "gp1.jpg",
+    "gp1.jpg",
+    "gp1.jpg",
+    "gp1.jpg",
+    "gp1.jpg",
+    "gp1.jpg",
+    
+];
