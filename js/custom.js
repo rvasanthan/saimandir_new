@@ -9,12 +9,15 @@
     function navbarFixed(){
         if ( $('.header_area').length ){ 
             $(window).scroll(function() {
-                var scroll = $(window).scrollTop();   
-                if (scroll >= 30 ) {
+                var scroll = $(window).scrollTop(); 
+                if (scroll >= 3 ) {
                     $(".header_area").addClass("navbar_fixed");
                 } else {
                     $(".header_area").removeClass("navbar_fixed");
                 }
+            });
+            $('window').on('touchmove', function(event) {
+              $(".header_area").addClass("navbar_fixed");
             });
         };
     };
@@ -325,7 +328,7 @@
         map.addMarker({
             lat: $markerLat,
             lng: $markerLon,
-            title: 'Shirdi Sai Mandir, 8370 Old Montgomery Road, Columbia, MD-21045',
+            title: 'Shirdi Sai Mandir, 6050 MeadowRidge Center Drive, Elkridge, MD-21075',
         });
     }
 
