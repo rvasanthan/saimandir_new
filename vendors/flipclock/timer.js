@@ -1,3 +1,4 @@
+/*
 var today = new Date();
 
 var timer = function() {};
@@ -6,9 +7,9 @@ timer.countdownDate.setHours(24+18);
 // set date to 10 days in the future for testing purposes
 //timer.countdownDate.setDate( timer.countdownDate.getDate() + 10 );
 timer.countdownDate.setDate(timer.countdownDate.getDate());
-/*
+
 * Get thing started
-*/
+
 timer.init = function() {
   timer.getReferences();
 
@@ -17,9 +18,9 @@ timer.init = function() {
   setInterval(function() { timer.update() }, 1000);
 }
 
-/*
+
 * Save references of timer section
-*/
+
 timer.getReferences = function() {
   timer.timer = document.getElementById("timer");
   timer.days = timer.timer.querySelectorAll(".days .timer__number")[0];
@@ -29,9 +30,9 @@ timer.getReferences = function() {
   timer.seconds = timer.timer.querySelectorAll(".seconds .timer__number")[0];
 }
 
-/*
+
 * remember time units for later use
-*/
+
 timer.getTimes = function() {
   timer.times = {};
   timer.times.second = 1000;
@@ -40,9 +41,9 @@ timer.getTimes = function() {
   timer.times.day = timer.times.hour * 24;
 }
 
-/*
+
 * Update the countdown
-*/
+
 timer.update = function() {
   if ( timer.timer.style.opacity !== 1 ) {
     timer.timer.style.opacity = 1;
@@ -57,9 +58,9 @@ timer.update = function() {
   timer.seconds.innerHTML = timer.getTimeRemaining(timer.times.second, 60);
 }
 
-/*
+
 * calculate remaining time based on a unit of time
-*/
+
 timer.getTimeRemaining = function( timeUnit, divisor ) {
   var n;
   if ( divisor == 1 ) {
@@ -79,3 +80,4 @@ timer.getTimeRemaining = function( timeUnit, divisor ) {
 window.addEventListener("load", function() {
   timer.init();
 });
+*/
