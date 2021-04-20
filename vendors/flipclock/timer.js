@@ -2,7 +2,8 @@
 var today = new Date();
 
 var timer = function() {};
-timer.countdownDate = new Date(2020, 03, 13);
+timer.countdownDate = new Date(2020, 06, 04);
+timer.countdownDate.setHours(24+18);
 // set date to 10 days in the future for testing purposes
 //timer.countdownDate.setDate( timer.countdownDate.getDate() + 10 );
 timer.countdownDate.setDate(timer.countdownDate.getDate());
@@ -24,6 +25,7 @@ timer.getReferences = function() {
   timer.timer = document.getElementById("timer");
   timer.days = timer.timer.querySelectorAll(".days .timer__number")[0];
   timer.hours = timer.timer.querySelectorAll(".hours .timer__number")[0];
+  console.log(timer.hours);
   timer.minutes = timer.timer.querySelectorAll(".minutes .timer__number")[0];
   timer.seconds = timer.timer.querySelectorAll(".seconds .timer__number")[0];
 }
@@ -35,7 +37,7 @@ timer.getTimes = function() {
   timer.times = {};
   timer.times.second = 1000;
   timer.times.minute = timer.times.second * 60;
-  timer.times.hour = timer.times.minute * 60;
+  timer.times.hour = (timer.times.minute * 60)+18;
   timer.times.day = timer.times.hour * 24;
 }
 
