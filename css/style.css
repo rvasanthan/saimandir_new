@@ -3656,6 +3656,13 @@ h1, h2, h3, h4, h5, h6 {
   color: yellow;
 }
 
+/* Accordion Styles */
+.accordion-button:focus {
+  z-index: 3;
+  border-color: #eb6b55 !important; 
+  box-shadow:#999;
+}
+
 /*---------------------------------------------------- */
 
 /*# sourceMappingURL=style.css.map */

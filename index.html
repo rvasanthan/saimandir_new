@@ -4,7 +4,6 @@
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <!-- <link rel="icon" href="image/favicon.png" type="image/png"> -->
         <title>Shirdi Sai Mandir of Maryland</title>
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="css/bootstrap.css">
@@ -31,9 +30,51 @@
         <link rel="icon" type="image/png" sizes="16x16" href="image/favicon-16x16.png">
         <link rel="manifest" href="imagemanifest.json">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+       <!--  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
         <meta name="msapplication-TileColor" content="#ffffff">
         <meta name="msapplication-TileImage" content="image/ms-icon-144x144.png">
         <meta name="theme-color" content="#ffffff">
+        <style>
+            .accordion-button:focus {
+                z-index: 3;
+                border-color: #eb6b55 !important; 
+                box-shadow:#999;
+            }
+
+            .accordion-button:not(.collapsed) {
+                color: #eb6b55;
+                background-color: #f8c8b6;
+                box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+            }
+
+            .accordion-button .collapsed {
+                color: #eb6b55;
+                background-color: #f8c8b6;
+                box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+            }
+            .bs-example{
+                margin: 20px;
+            }
+            .accordion .fa{
+                margin-right: 0.5rem;
+                  font-size: 24px;
+                  font-weight: bold;
+                position: relative;
+                top: 2px;
+            }
+            .btn-link {
+                font-weight: 400;
+                color: #e65400;
+                background-color: transparent;
+            }
+            .btn-link:hover {
+                color: #e65400;
+                text-decoration: underline;
+                background-color: transparent;
+                border-color: transparent;
+            }
+        </style>
     </head>
     <body>
         <!--================Header Area =================-->
@@ -53,29 +94,14 @@
                     </div>
                 </div>
             </div>
-            <!-- <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e65400; height: 50px;">
-                <div class="container">                                                                                                                                                                                                                                                                                                                                                                    
-                   <div class="row">
-                        
-                    </div>
-                    <div class="collapse navbar-collapse offset" id="">
-                        <ul class="nav navbar-nav menu_nav ml-auto">
-                            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>  -->
             <nav class="navbar navbar-expand-lg navbar-light bg_white">
-                <div class="container">
-                    <!-- Brand and toggle get grouped for be  -->                                                                                                                                                                                                                                                                                                                                                                          
+                <div class="container">                                  
                     <div class="row">
                         <div class="span4">
                             <div class="clearfix content-heading">
                                 <a class="navbar-brand logo_h" href="index.html" >
                                     <img class="pull-left" src="image/ShirdiSaibaba.png" alt="" style="padding-bottom: 1px;" width="120px" height="105px">
-                                    <h3 class="logo_text">&nbsp Shirdi Sai Mandir</h3>
+                                    <h3 class="logo_text">&nbsp Sri Shirdi Sai Mandir</h3>
                                 </a>
                             </div>
                         </div>
@@ -86,48 +112,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
-                        <ul class="nav navbar-nav menu_nav ml-auto">
-                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="index.html#about">About Us</a></li>
-                            <li class="nav-item"><a class="nav-link" href="index.html#services">Services</a></li>
-                            <li class="nav-item"><a class="nav-link" href="index.html#donation">Donate</a></li>
-                            <li class="nav-item"><a class="nav-link" href="index.html#events">Events</a></li>
-                            <li class="nav-item submenu dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Gallery</a>
-                                <ul class="dropdown-menu">
-                                    <!-- <li class="nav-item"><a class="nav-link" href="https://photos.app.goo.gl/mQRcqj52NTyqBwGd6">Ugadi 2019</a></li>-->
-                                    <li class="nav-item"><a class="nav-link" href="ugadhi.html">Ugadi 2019</a></li>
-                                    <!--<li class="nav-item"><a class="nav-link" href="gurupurnima.html">Guru Purnima</a></li>-->
-                                    <li class="nav-item"><a class="nav-link" href="day1.html">Sai Samasthan Day One</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="sankranthi.html">Sankranthi</a></li>
-                                </ul>
-                            </li>
-                            <!-- <li class="nav-item submenu dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages</a>
-                                <ul class="dropdown-menu">
-                                    <li class="nav-item"><a class="nav-link" href="about-us.html">About</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="donation.html">Donation</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="elements.html">Elements</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item submenu dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog</a>
-                                <ul class="dropdown-menu">
-                                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="blog-single.html">Blog Details</a></li>
-                                </ul>
-                            </li> -->
-
-                            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-
-                        </ul>
-                        <!-- <ul class="nav navbar-nav navbar-right">
-                            <li class="nav-item"><a href="#" class="search"><i class="lnr lnr-magnifier"></i></a></li>
-                        </ul> -->
-                    </div>
+                    <main-menu></main-menu>
                 </div>
             </nav>
         </header>
@@ -145,13 +130,9 @@
                             <h1>Why Fear when I am here</h1>
                             <h1> - Shirdi Sai Baba </h1>
                             <p>He is the force, motivation, and faith of all of us. Right now in Maryland.</p>
-                            <a href="#contact" class="btn_hover btn_hover_two">Visit our New Location</a>
+                            <a href="#faq" class="btn_hover btn_hover_two">Read FAQs</a>
                             <a href="#donation" class="btn_hover btn_hover_two">Donate</a>
-                            <!-- <a href="#" data-toggle="modal" data-target="#covid19Modal" class="btn_hover btn_hover_two">Thursday Aarthi Online</a> -->
-                            
-                            <!-- <a href="#" data-toggle="modal" data-target="#gurupurnimaModal" class="btn_hover btn_hover_two">Guru Purnima Online</a>
-                            <a href="balanilayam.html" target="_blank" class="btn_hover btn_hover_two">Enroll for Sai Bala Nilayam</a> -->
-                            <!-- <a href="image/Flyer_MakarSankranthi.jpg" target="_blank" class="btn_hover btn_hover_two">Makara Sankranthi</a> -->
+                            <a href="https://zoom.us/j/4437550100" class="btn_hover btn_hover_two">Shej Aarathi Live</a>
                         </div>
                     </div>
                 </div>
@@ -159,45 +140,6 @@
         </section>
         
         <!--================banner Area =================-->
-
-        <!--================Event Date Area =================-->
-        <!-- <section class="event_date_area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 d_flex">
-                        <div class="evet_location flex">
-                            <h3>Guru Purnima</h3>
-                            <p><span class="lnr lnr-calendar-full"></span>5th July, 2020</p>
-                            <p><span class="lnr lnr-clock"></span>Sunday, 6.00 PM to 8.00 PM</p>
-                            <p><span class="lnr lnr-camera-video"></span><a href="https://zoom.us/j/4437550100" style="color: white;"><u>Zoom Meeting</u></a></p>
-                        </div>
-                    </div>
-                    
-                    <div class="col-md-6 event_time">
-                        <h4>Our Next Event Starts in</h4>
-                        <div id="timer" class="timer">
-                            <div class="timer__section days">
-                                <div class="timer__number"></div>
-                                <div class="timer__label">days</div>
-                            </div>
-                            <div class="timer__section hours">
-                                <div class="timer__number"></div>
-                                <div class="timer__label">hours</div>
-                            </div>
-                            <div class="timer__section minutes">
-                                <div class="timer__number"></div>
-                                <div class="timer__label">Minutes</div>
-                            </div>
-                            <div class="timer__section seconds">
-                                <div class="timer__number"></div>
-                                <div class="timer__label">seconds</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>  -->
-        <!--================Event Date Area =================-->
 
         <!--================About Area =================-->
         <section class="about_area section_gap" id="about">
@@ -217,46 +159,18 @@
                         </div>
                     </div>
                     <div class="col-md-4 about_image">
-                        <img src="image/PHOTO-2019-01-04-07-44-50.jpg" alt="abou_img" width="450px" height="500px">
+                        <img src="https://res.cloudinary.com/abhinithame/image/upload/v1635873790/Saimandir/Baba.jpg" alt="abou_img" width="450px" height="500px">
                     </div>
                 </div>
             </div>
         </section>
         <!--================About Area =================-->
 
-        <!--================Features Area =================-->
-        <!-- <section class="features_area">
-            <div class="row m0">
-                <div class="col-md-6 features_item">
-                    <h3>Our temple is new</h3>
-                    <p>The French Revolution constituted for the conscience of the dominant aristocratic class a fall from innocence and upturning of the natural.</p>
-                    <a href="#" class="btn_hover view_btn">View Details</a>
-                </div>
-                <div class="col-md-6 features_item">
-                    <h3>Spreading Light to world</h3>
-                    <p>The French Revolution constituted for the conscience of the dominant aristocratic class a fall from innocence and upturning of the natural.</p>
-                    <a href="#" class="btn_hover view_btn">View Details</a>
-                </div> -->
-                <!-- <div class="col-md-2 features_item">
-                    <h3>Spreading Light to world</h3>
-                    <p>The French Revolution constituted for the conscience of the dominant aristocratic class a fall from innocence and upturning of the natural.</p>
-                    <a href="#" class="btn_hover view_btn">View Details</a>
-                </div>
-                <div class="col-md-2 features_item">
-                    <h3>Spreading Light to world</h3>
-                    <p>The French Revolution constituted for the conscience of the dominant aristocratic class a fall from innocence and upturning of the natural.</p>
-                    <a href="#" class="btn_hover view_btn">View Details</a>
-                </div> -->
-            <!-- </div>
-        </section> -->
-        <!--================Features Area =================-->
-
         <!--================Services work Area =================-->
         <section class="sermons_work_area section_gap" id="services">
             <div class="container">
                 <div class="section_title text-center">
                     <h2>Our Services</h2>
-                    <!-- <p>The French Revolution constituted for the conscience of the dominant aristocratic class a fall from</p> -->
                 </div>
                 <div class="sermons_slider owl-carousel">
                     <!-- Caroussel Item 1-->
@@ -270,18 +184,9 @@
                             <div class="sermons_content">
                                 <h3 class="title_color">Puja and Aarthi</h3>
                                 <ul class="list_style sermons_category">
-                                    <!-- <li><i class="lnr lnr-user"></i><span>Categories: </span><a href="#"> Travor James</a></li> -->
-                                    <!-- li><i class="lnr lnr-database"></i><span>Sermon Speaker: </span> Prayer</li> -->
                                     <li><i class="lnr lnr-calendar-full"></i><span>Date:</span> Every Thursday 7.00PM - 9.00PM</li>
                                 </ul>
-                                <p>Aarthi will be done every thursday evening between 7:30 PM - 9:00 PM in our Sai Mandir.
-
-                                </p>
-                                <!-- <a href="#" class="btn_hover" data-toggle="modal" data-target="#exampleModal">View More Details</a>
-                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                                        Launch demo modal
-                                      </button> -->
-                                        <!-- <a href="#services" class="about_btn btn_hover">Read More..</a> -->
+                                <p>Aarthi will be done every thursday evening between 7:30 PM - 9:00 PM in our Sai Mandir.</p>
                             </div>
                         </div>
                     </div>
@@ -290,23 +195,15 @@
                         <div class="col-lg-8">
                             <div class="sermons_image">
                                 <img src="https://i.imgur.com/PyQLWTh.jpg" title="source: imgur.com" width=350px" height="400px"/></a>
-                                <!-- <p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially in the workplace. That’s why it’s crucial that, as women, our behavior on the job is beyond reproach. inappropriate behavior is often laughed.</p> -->
                             </div>
                         </div>
                         <div class="col-lg-4">
                                 <div class="sermons_content">
                                     <h3 class="title_color">Sponsorship and Patronage</h3>
                                     <ul class="list_style sermons_category">
-                                        <!-- <li><i class="lnr lnr-user"></i><span>Categories: </span><a href="#"> Travor James</a></li> -->
-                                        <!-- li><i class="lnr lnr-database"></i><span>Sermon Speaker: </span> Prayer</li> -->
-                                        <!-- <li><i class="lnr lnr-calendar-full"></i><span>Date:</span> Every Thursday</li> -->
                                     </ul>
                                     <p> As a respected Sai Devotee, You have several opportunities to support our Sai Mandir. You can sponsor flowers for Baba, Food for Baba and our devotees, and any help in the successful development of our place established for Baba. In the future, We have plans to serve many non-religious community activities as well.
                                     </p>
-                                    <!-- <a href="#" class="btn_hover" data-toggle="modal" data-target="#exampleModal">View More Details</a>
-                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                                            Launch demo modal
-                                          </button> -->
                                 </div>
                             </div>
                     </div>
@@ -321,16 +218,9 @@
                                 <div class="sermons_content">
                                     <h3 class="title_color">Volunteering</h3>
                                     <ul class="list_style sermons_category">
-                                        <!-- <li><i class="lnr lnr-user"></i><span>Categories: </span><a href="#"> Travor James</a></li> -->
-                                        <!-- li><i class="lnr lnr-database"></i><span>Sermon Speaker: </span> Prayer</li> -->
-                                        <!-- <li><i class="lnr lnr-calendar-full"></i><span>Date:</span> Every Thursday</li> -->
                                     </ul>
                                     <p> Our Sai Mandir is driven by countless good-hearted young individuals who are helping us in all possible ways. However, we are always welcoming more Sai devotees to join hands with us. Moving forward, we will engage in many activities and serve the communities assisted by your helping hands.
                                     </p>
-                                    <!-- <a href="#" class="btn_hover" data-toggle="modal" data-target="#exampleModal">View More Details</a>
-                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                                            Launch demo modal
-                                          </button> -->
                                 </div>
                             </div>
                         </div>
@@ -339,43 +229,10 @@
             </div>
         </section>
         <!--================Sermons work Area=================-->
+        
         <!--================Donate Area=================-->
-        <!-- <section class="donate_area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 d-flex align-self-center">
-                        <div class="donate_content ">
-                            <h2>Your donation can save <br>many lives</h2>
-                            <p>The French Revolution constituted for the conscience of the dominant aristocratic class a fall from innocence.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="donation_form">
-                            <h3>How much would you like to donate?</h3>
-                            <div class="form-group">
-                                <input type='text' class="form-control" placeholder="$5"/>
-                            </div>
-                            <div class="form-group">
-                                <input type='text' class="form-control" placeholder="$5"/>
-                            </div>
-                            <div class="form-group">
-                                <input type='text' class="form-control" placeholder="$5"/>
-                            </div>
-                            <div class="form-group">
-                                <input type='text' class="form-control" placeholder="Any"/>
-                            </div>
-                            <a href="#" class="btn_hover btn_hover_two">Donate Now</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-        <!--================Donate Area=================-->
-
-        <!--================Donate Area=================-->
-        <div id="donation" class="section_title text-center" style="margin-top: 50px">
+        <!-- <div id="donation" class="section_title text-center" style="margin-top: 50px">
                 <h2>Donate</h2>
-                <!-- <p>The French Revolution constituted for the conscience of the dominant aristocratic class a fall from</p> -->
             </div>
         <section class="donate_area">
             <div class="container">
@@ -389,25 +246,48 @@
                     <div class="col-md-6">
                         <div class="donation_form">
                             <h3>Please donate using PayPal</h3>
-                            <!-- <div class="form-group">
-                                <input type='text' class="form-control" placeholder="$5"/>
-                            </div>
-                            <div class="form-group">
-                                <input type='text' class="form-control" placeholder="$5"/>
-                            </div>
-                            <div class="form-group">
-                                <input type='text' class="form-control" placeholder="$5"/>
-                            </div>
-                            <div class="form-group">
-                                <input type='text' class="form-control" placeholder="Any"/>
-                            </div> -->
                             <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=KS4W7SE989GZ8&source=url" class="btn_hover btn_hover_two" style="font-size: 18px"><i class="fab fa-paypal" style="font-size: 22px">&nbsp</i>Donate Now</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!--================Donate Area=================-->
+
+    <div id="donation" class="section_title text-center" style="margin-top: 50px">
+        <h2>Donate for our Temple</h2>
+    </div>
+    <section class="donate_area">
+        <div class="container">
+            <div class="row">
+                <!-- <div class="col-md-6 d-flex align-self-center">
+                    <div class="donate_content ">
+                        <h2>Sai Mandir is happy to see you as a sponsor for the Chaturthi Pooja.</h2>
+                        <ul>
+                            <li><p>Swarna Gowri Pooja Sponsorship : $25</p></li>
+                            <li><p>Ganesha Abhishekam Sponsorship : $25</p></li>
+                            <li><p>Ganapathy Homam Sponsorship : $25</p></li>
+                            <li><p>Sponsoring all the 3 Poojas : $51</p></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <div class="col-md-6 d-flex align-self-center">
+                    <div class="donation_form" style>
+                        <h3>Please give your generous donation. Your small donation can make a huge difference.</h3>
+                        <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=KS4W7SE989GZ8&source=url" class="btn_hover btn_hover_two" style="font-size: 18px"><i class="fab fa-paypal" style="font-size: 22px">&nbsp</i>Donate Now</a>
+                    </div>
+                </div> -->
+                
+                <div class="col-md-12">
+                    <div class="donation_form" style>
+                        <h3>Your small donation can make a huge difference.</h3>
+                        <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=KS4W7SE989GZ8&source=url" class="btn_hover btn_hover_two" style="font-size: 18px"><i class="fab fa-paypal" style="font-size: 22px">&nbsp</i>Donate Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
 
 
         <!--================Event Blog Area=================-->
@@ -418,18 +298,6 @@
                     <p>We have numerous upcoming events happening in our temple</p>
                 </div>
                 <div class="row">
-                    <!-- <div class="col-md-6">
-                        <div class="event_post">
-                            <img src="https://res.cloudinary.com/abhinithame/image/upload/v1593088983/Saimandir/assets/Canva_-_Sanskrit.jpg" alt="" height="323px" width="700px">
-                            <a href="balanilayam.html"><h2 class="event_title">Sai Bala Nilayam</h2></a>
-                            <ul class="list_style sermons_category event_category">
-                                <li><i class="lnr lnr-calendar-full"></i>Tuesday, 7th July, 2020</li>
-                                <li><a href="https://www.google.com/maps/place/12190+Triadelphia+Rd,+Ellicott+City,+MD+21042/@39.2853213,-76.937574,898m/data=!3m2!1e3!4b1!4m5!3m4!1s0x89c826d8b561cd1d:0xa6609fead69c1866!8m2!3d39.2853172!4d-76.9353853"><i class="lnr lnr-apartment"></i>Shirdi Sai Mandir</a></li>
-                                <li><i class="lnr lnr-camera-video"></i><a href="https://zoom.us/j/4437550100"><u style="color: blue;">Join Zoom Meeting</u></a></li>
-                            </ul>
-                            <a href="#" class="btn_hover">View Details</a> 
-                        </div>
-                    </div> -->
                     <div class="col-md-6">
                         <div class="event_post">
                             <img src="https://i.imgur.com/MM3aUxW.jpg?1" height="375px">
@@ -440,49 +308,160 @@
                                 <li><i class="lnr lnr-location"></i>Ellicott City, Maryland, USA</li>
                                 <li><i class="lnr lnr-camera-video"></i><a href="https://zoom.us/j/4437550100"><u style="color: blue;">Join Zoom Meeting</u></a></li>
                             </ul>
-                             <!-- <a href="#" class="btn_hover">View Details</a> -->
-
                         </div>
                     </div> 
                     
-                    <div class="col-md-6">
+                    <!-- <div class="col-md-6">
                         <div class="event_post">
-                            <img src="https://i.imgur.com/TrnII4Z.jpg?2" height="375px">
-                            <a href="#"><h2 class="event_title">Ugadhi & Panchanga Sravanam</h2></a>
+                            <img src="image/masksforindia.png" height="375px">
+                            <a href="#"><h2 class="event_title">Masks For India</h2></a>
                             <ul class="list_style sermons_category event_category">
-                                <li><i class="lnr lnr-calendar-full"></i>Saturday, April 17th, 7.00PM - 8.00PM</li>
+                                <li><i class="lnr lnr-calendar-full"></i>Every day from 9.00 AM - 9.00 PM</li>
                                 <li><a href="https://www.google.com/maps/place/12190+Triadelphia+Rd,+Ellicott+City,+MD+21042/@39.2853213,-76.937574,898m/data=!3m2!1e3!4b1!4m5!3m4!1s0x89c826d8b561cd1d:0xa6609fead69c1866!8m2!3d39.2853172!4d-76.9353853"><i class="lnr lnr-apartment"></i>Shirdi Sai Mandir</a></li>
-                                <li><i class="lnr lnr-location"></i>Ellicott City, Maryland, USA</li>
-                                <li><i class="lnr lnr-camera-video"></i><a href="https://zoom.us/j/4437550100"><u style="color: blue;">Join Zoom Meeting</u></a></li>
+                                <li><i class="lnr lnr-location"></i>Ellicott City, Maryland, USA</li> 
+                                <li><i class="fab fa-paypal"></i><a href="#donation"><u style="color: blue;">Click Here for Donation</u></a></li>
                             </ul>
-                             <!-- <a href="#" class="btn_hover">View Details</a>  -->
-
-                        </div>
-                    </div>
-
-                    <!-- <div class="col-md-4">
-                        <div class="event_post">
-                            <img src="image/blog3.jpg" alt="">
-                            <a href="#"><h2 class="event_title">Spreading Light to world</h2></a>
-                            <ul class="list_style sermons_category event_category">
-                                <li><i class="lnr lnr-user"></i>Saturday, 5th may, 2018</li>
-                                <li><i class="lnr lnr-apartment"></i>Rocky beach Church</li>
-                                <li><i class="lnr lnr-location"></i>Santa monica, Los Angeles, USA</li>
-                            </ul>
-                            <a href="#" class="btn_hover">View Details</a>
                         </div>
                     </div> -->
+
+                    <div class="col-md-6">
+                        <div class="event_post">
+                            <img src="https://res.cloudinary.com/abhinithame/image/upload/v1645672692/Saimandir/hindu-g8de117671_1920.jpg" height="375px">
+                            <a href="#"><h2 class="event_title">Maha Shivaratri</h2></a>
+                            <ul class="list_style sermons_category event_category">
+                                <li><a target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=MnRuZWlkNjdxYTg3bjhxODIxOWZ0ZmEzcDQgdmFzYW50aC5yYXZpbmRyYW5AbQ&amp;tmsrc=vasanth.ravindran%40gmail.com"><i class="lnr lnr-calendar-full"></i>Feb 28 2022 6.30 PM EST</a></li>
+                                <li><a href="https://www.google.com/maps/place/12190+Triadelphia+Rd,+Ellicott+City,+MD+21042/@39.2853213,-76.937574,898m/data=!3m2!1e3!4b1!4m5!3m4!1s0x89c826d8b561cd1d:0xa6609fead69c1866!8m2!3d39.2853172!4d-76.9353853"><i class="lnr lnr-apartment"></i>Shirdi Sai Mandir</a></li>
+                                <li><i class="lnr lnr-location"></i>Ellicott City, Maryland, USA</li> 
+                                <li><i class="lnr lnr-camera-video"></i><a href="https://zoom.us/j/4437550100"><u style="color: blue;">Join Zoom Meeting</u></a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
+
+                
+                
+
             </div>
         </section>
         <!--================Blog Area=================-->
+
+        <section class="sermons_work_area section_gap" id="faq">
+            <div class="section_title text-center">
+                <h2>Frequently Asked Questions</h2>
+            </div>
+            <div class="container">
+                <div class="bs-example">
+                    <div class="accordion" id="accordionExample">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h2 class="mb-0">
+                                    <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"><i class="fa fa-angle-right"></i> Is the temple open everyday?</button>									
+                                </h2>
+                            </div>
+                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <p>Yes. The temple is open everyday from 9 AM to 8 PM EST. We recommend you to call <a href="tel:+14436367807"><i class="lnr lnr-phone-handset" style="padding-right: 2px;"></i> +1 443 636 7807</a> before you visit our temple.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h2 class="mb-0">
+                                    <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"><i class="fa fa-angle-down"></i>Is there any Covid protocols in the temple?</button>
+                                </h2>
+                            </div>
+                            <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <p>All the devotees should wear a mask in order to enter the temple premises. Please maintain a 6 feet social distance. Always follow the directions of our priest and our volunteers for the safety of all our devotees visiting our temple.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h2 class="mb-0">
+                                    <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"><i class="fa fa-angle-right"></i> What are the timings of Aarthi?</button>                     
+                                </h2>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <p>Aarthi will be performed every thursday evening. Every devotee can attend the Aarathi either by online or in person. Please follow the covid protocols if you are visiting the temple for aarathi. Please <a href="https://zoom.us/j/4437550100">Click here</a> to join our thursday aarathi online.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingFour">
+                                <h2 class="mb-0">
+                                    <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour"><i class="fa fa-angle-right"></i> How do I make donations?</button>                     
+                                </h2>
+                            </div>
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <p>You can maeke donations in many ways. <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=KS4W7SE989GZ8&source=url">Click here</a> to go to the paypal page to make donations.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+
+        </section>
+        
+        <!--================Subscribe Area =================-->
+        <div id="subscribe" class="section_title text-center" style="margin-top: 50px">
+            <h2>Subscribe to Saimandir Updates</h2>
+        </div>
+        <section id="contact" class="donate_area section_gap">
+            <div class="container">
+                <p style="color:white">Sri Shirdi Sai Mandir takes immense pleasure to add you to our family and share the joy and blessings with you and your family. Please provide us your contact info and we will keep you updates on all our events and Pujas.</p>
+                <div class="contact_info">
+                    <div class="row contact_form">
+                        <div class="col-lg-12 text-center text-center contact_form">
+                            <form class="row contact_form" id="contactForm" novalidate="novalidate"> 
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control subscribe-input" id="firstname" name="firstname" placeholder="Enter your First Name">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control subscribe-input" id="contact-email" name="contact-email" placeholder="Enter your Email Address">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <!-- <div class="form-group">
+                                        <textarea class="form-control" name="message" id="message" rows="1" placeholder="Enter Message"></textarea>
+                                    </div> -->
+                                    <div class="form-group">
+                                        <input type="text" class="form-control subscribe-input" id="lastname" name="lastname" placeholder="Enter your Last Name">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control subscribe-input" id="phone" name="phone" placeholder="Enter your Phone Number in the Format +1 xxxxxxxxxx">
+                                    </div>
+                                </div>
+                                <div class="col-md-12 text-center">
+                                    <button id="subscribe_button" value="submit" class="btn btn_hover btn_hover_two">Subscribe Here</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!--================Subscribe Area =================-->
+
+        <!--================Live Area =================-->
+        <!-- <section id="contact" class="live_area section_gap">
+            <div class="iframe-container" style="overflow: hidden; padding-top: 56.25%; position: relative;">         
+                <iframe allow="microphone; camera" style="border: 0; height: 100%; left: 0; position: absolute; top: 0; width: 100%;" src="https://success.zoom.us/wc/join/6922483232" frameborder="0"></iframe> 
+            </div>
+        </section> -->
+        <!--================Live Area =================-->
 
         <!--================Contact Area =================-->
         <section id="contact" class="contact_area section_gap">
             <div class="container">
                     <div class="section_title text-center">
                             <h2>Contact</h2>
-                            <!-- <p>We have more upcoming and regular events happening in our temple</p> -->
                         </div>
                     <div id="mapBox" class="mapBox"
 
@@ -496,69 +475,60 @@
                     </div>
                 <div class="contact_info">
                         <div class="row">
-                                <!-- <div class="col-md-9"> -->
-                                    <!-- <div class="contact_info" style="width:50%"> -->
-                                        <div class="col-md-4 contact_info">
-                                            <div class="info_item">
-                                                <i class="lnr lnr-home"></i>
-                                                <h6><a href="https://www.google.com/maps/place/12190+Triadelphia+Rd,+Ellicott+City,+MD+21042/@39.2853213,-76.937574,898m/data=!3m2!1e3!4b1!4m5!3m4!1s0x89c826d8b561cd1d:0xa6609fead69c1866!8m2!3d39.2853172!4d-76.9353853">12190 Triadelphia Road</a></h6>
-                                                <p>Ellicott City, Maryland-21042</p>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 contact_info">
-                                            <div class="info_item">
-                                                <i class="lnr lnr-phone-handset"></i>
-                                                <h6><a href="tel:+14436367807">+1 443 636 7807</a></h6>
-                                                <p>Call us for any questions!</p>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 contact_info">
-                                            <a href="mailto:contact@saimandir.org?Subject=Query-Shirdi%20Sai%20Mandir">
-                                                <div class="info_item">
-                                                    <i class="lnr lnr-envelope"></i>
-                                                    <h6><a href="mailto:contact@saimandir.org?Subject=Query-Shirdi%20Sai%20Mandir">contact@saimandir.org</a></h6>
-                                                    <p>Send us your query anytime!</p>
-                                                </div>
-                                            </a>
-                                        </div>
-
+                            <div class="col-md-4 contact_info">
+                                <div class="info_item">
+                                    <i class="lnr lnr-home"></i>
+                                    <h6><a href="https://www.google.com/maps/place/12190+Triadelphia+Rd,+Ellicott+City,+MD+21042/@39.2853213,-76.937574,898m/data=!3m2!1e3!4b1!4m5!3m4!1s0x89c826d8b561cd1d:0xa6609fead69c1866!8m2!3d39.2853172!4d-76.9353853">12190 Triadelphia Road</a></h6>
+                                    <p>Ellicott City, Maryland-21042</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 contact_info">
+                                <div class="info_item">
+                                    <i class="lnr lnr-phone-handset"></i>
+                                    <h6><a href="tel:+14436367807">+1 443 636 7807</a></h6>
+                                    <p>Call us for any questions!</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 contact_info">
+                                <a href="mailto:contact@saimandir.org?Subject=Query-Shirdi%20Sai%20Mandir">
+                                    <div class="info_item">
+                                        <i class="lnr lnr-envelope"></i>
+                                        <h6><a href="mailto:contact@saimandir.org?Subject=Query-Shirdi%20Sai%20Mandir">seva@saimandir.org</a></h6>
+                                        <p>Send us your query anytime!</p>
                                     </div>
-                                    <div class="col-md-12">
-                                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScz-hlLFHe-PJtY5ehdZ_-YjE5h_0o5AUD43FZVBupo8zvvDA/viewform?embedded=true"  width="1000" height="1300" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-                                    </div>
-                                <!-- </div> -->
-                                <!-- <div class="col-md-9">
-                                    <form class="row contact_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
-                                            </div>
-                                            <div class="form-group">
-                                                <input type="email" class="form-control" id="email" name="email" placeholder="Enter email address">
-                                            </div>
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" id="subject" name="subject" placeholder="Enter Subject">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <textarea class="form-control" name="message" id="message" rows="1" placeholder="Enter Message"></textarea>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12 text-right">
-                                            <button type="submit" value="submit" class="btn btn_hover btn_hover_two">Send Message</button>
-                                        </div>
-                                    </form>
-                                </div> -->
-
-                            <!-- </div> -->
+                                </a>
+                            </div>
+                        </div>
+                        <!-- <div class="col-md-12">
+                            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScz-hlLFHe-PJtY5ehdZ_-YjE5h_0o5AUD43FZVBupo8zvvDA/viewform?embedded=true"  width="1000" height="1300" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+                        </div> -->
+                </div>
+                <div class="col-md-12">
+                    <div class="row contact_form" id="contactForm">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="messageemail" name="email" placeholder="Enter email address">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="subject" name="subject" placeholder="Enter Subject">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <textarea class="form-control" name="message" id="message" rows="1" placeholder="Enter Message"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-md-12 text-center">
+                            <button id="sendmessage" value="submit" class="btn btn_hover btn_hover_two">Send Message</button>
+                        </div>
+                    </div>
                 </div>
 
             </div>
         </section>
-        <!-- <section class="donate_area"> 
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScz-hlLFHe-PJtY5ehdZ_-YjE5h_0o5AUD43FZVBupo8zvvDA/viewform?embedded=true"  width="1000" height="600" frameborder="0" marginheight="0" marginwidth="0" style="text-align: center; margin-left: auto; margin-right: auto;">Loading...</iframe>
-        </section> -->
         <!--================Contact Area =================-->
         <!--================Welcoming Our Priest Modal Area -- Start =================-->
         <div class="modal fade" id="welcomePriest" tabindex="-1" role="dialog" data-backdrop="static" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -580,8 +550,6 @@
                     Sri Shirdi Sai Mandir, Ellicott City Maryland welcomes Sri Manjunathaiah Hiremathada as the Sri Shirdi Sai Mandir Pradhana Archaka (Main Priest).  Manjunath Ji has been a resident of the United States of America for more than 10 years.  As a very well known priest in the greater Baltimore area, he will be joining us beloved community on December 28, 2020. For any inquiries regarding poojas, performed either at the temple or your home, please contact us via email at <a href="mailto:seva@saimandir.org?Subject=Query-Shirdi%20Sai%20Mandir">seva@saimandir.org</a> or make a call to <a href="tel:+12407796591"><i class="lnr lnr-phone-handset" style="padding-right: 2px;"></i> +1 240 779 6591</a>. For more details visit SaiMandir.org.
                 </div>
                 <div class="modal-footer" style="display: inline; text-align: center;">
-                  <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button> -->
                   <a href="#" data-dismiss="modal"  class="btn_hover btn_hover_two">Go to Home page</a>
                 </div>
               </div>
@@ -590,55 +558,95 @@
         
         <!--================Welcoming Our Priest Modal Area -- End =================-->
 
-        <!--================Ugadhi 2021 -- Start =================-->
-        <div class="modal fade" id="ugadhi2021" tabindex="-1" role="dialog" data-backdrop="static" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <!--================Ramanavami 2021-- Start =================-->
+        <div class="modal fade" id="dusheraModal" tabindex="-1" role="dialog" data-backdrop="static" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
               <div class="modal-content">
                   <div class="modal-header">
-                  <h4 class="modal-title" id="exampleModalLabel">Happy Ugadhi !!!</h4>
+                  <h4 class="modal-title" id="exampleModalLabel">Temple Visiting & Guidelines</h4>
                   <button type="button" class="close" style="color: white;" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
                 <br/>
                 <div class="col-lg-12">
-                    <img src="image/1618287069_ugadi2.jpg" class="img-fluid" alt="Responsive image">
+                    <!-- <img src="image/ganesh-chaturthi.jpg" class="img-fluid" alt="Responsive image"> -->
+                    <img src="https://res.cloudinary.com/abhinithame/image/upload/v1640916273/Saimandir/saimandir.jpg" class="img-fluid" style="width: 600px;height: 300px;" alt="Responsive image">
                 </div>
                 <br/>
                 <div class="col-md-12">
-                    <p>
-                    Sri Shirdi Sai Mandir takes immense pleasure in inviting all our sai devotees for the <b>Ugadhi Abhishekam and Panchanga Sravanam by Shri Nagamalleswara Rao Sidanthi Garu on Saturday 04/17 from 5PM to 7.30 PM EST </b>at our temple. The safety of our sai devotees is the most important factor during these days. Please contact us via email at <a href="mailto:seva@saimandir.org?Subject=Query-Shirdi%20Sai%20Mandir">seva@saimandir.org</a> or call us on <a href="tel:+14436367807"><i class="lnr lnr-phone-handset" style="padding-right: 2px;"></i>+1 443 636 7807</a> to know more about this event. Please <a style="font-size: 14px;" href="https://zoom.us/j/4437550100"><u style="color: blue;">Click Here</u></a> to join the event online and get blessed.</b></b>
+                    <p style="margin-bottom:-2px">
+                        Sri Shirdi Sai Mandir of Maryland takes immense pleasure to invite all our devotees to visit our temple .Our temple is open <b>every day from 9 AM to 8 PM EST</b>. We recommend all our devotees to call to +1 443 636 7807 if you are planning to visit the temple. 
+
+                        Please find the Guidelines for our devotees to visit our temple
+                        <ul>
+                            <li>Please wear a face mask while entering the temple premises.</li>
+                            <li>Please maintain Social distancing. </li>
+                            <li>Always keep distance from the priest and temple volunteers</li>
+                            <li>Follow the directions provided by the volunteers and priest to maintain the sanity and safety of everyone.</li>
+                            <li>Please refrain from visiting the temple if you have any symptoms or exposed to covid within the past 10 days.</li>
+                        </ul>
+                        
+                        For any queries, Please contact us via email at <a href="mailto:seva@saimandir.org?Subject=Query-Shirdi%20Sai%20Mandir" target="_blank">seva@saimandir.org</a> or call us on <a href="tel:+14436367807"><i class="lnr lnr-phone-handset" style="padding-right: 2px;"></i>+1 443 636 7807</a>. 
                     <br/>
-                    <h5>One Tap Mobile:</h5>
-                    
-                    <div class="row">
-                        <div class="col-md-6 contact_info">
-                            <div class="info_item">
-                                <i class="lnr lnr-phone-handset"></i>
-                                <h6><a href="tel:+13017158592,,4437550100#">+1 301 715 8592</a></h6>
-                                <p>Baltimore</p>
-                            </div>
-                        </div>
-                        <div class="col-md-6 contact_info">
-                            <div class="info_item">
-                                <i class="lnr lnr-phone-handset"></i>
-                                <h6><a href="tel:+16465588656,,4437550100#">+1 646 558 8656</a></h6>
-                                <p>Newyork</p>
-                            </div>
-                        </div>
-                    </div>
-                    <h6><a href="https://chat.whatsapp.com/GEWz3LLuxy8LyGbDsLAC9u"><u style="color: blue;">Click Here Join Our WhatsApp Group</u></a></h5>
                 </div>
                 <div class="modal-footer" style="display: inline; text-align: center;">
-                  <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button> -->
                   <a href="#" data-dismiss="modal"  class="btn_hover btn_hover_two">Go to Home page</a>
+                  <a href="#donation" data-dismiss="modal" class="btn_hover btn_hover_two" style="font-size: 14px"><i class="fab fa-paypal" style="font-size: 16px">&nbsp</i>Sponsor Now</a>
                 </div>
               </div>
             </div>
           </div>
         
         <!--================Ugadhi 2021 Modal Area -- End =================-->
+
+        <!--================SHIV RATRI MODAL -- Start =================-->
+        <div class="modal fade" id="shivModal" tabindex="-1" role="dialog" data-backdrop="static" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog mw-100 w-50">
+              <div class="modal-content">
+                  <div class="modal-header">
+                  <h4 class="modal-title" id="exampleModalLabel">Maha Shivaratri at Shirdi Sai Mandir</h4>
+                  <button type="button" class="close" style="color: rgb(97, 93, 93);" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <br/>
+                <div class="col-lg-12">
+                    <!-- <img src="image/ganesh-chaturthi.jpg" class="img-fluid" alt="Responsive image"> -->
+                    <img src="https://res.cloudinary.com/abhinithame/image/upload/v1645672692/Saimandir/hindu-g8de117671_1920.jpg" class="img-fluid" style="width: 700px;height: 300px;" alt="Responsive image">
+                </div>
+                <br/>
+                <div class="col-md-12">
+                    <p style="margin-bottom:-2px">
+                        Sri Shirdi Sai Mandir of Maryland takes immense pleasure to invite all our devotees for the Maha Shivaratri 4 Kaala Puja and the whole night puja and bhajan on February 28th. 
+                        <br/>
+                        <b>Schedule for the 4 Kaala Puja:</b>
+                        <ul>
+                            <li>1st Kaala Pooja: February 28th 6.30 PM</li>
+                            <li>2nd Kaala Pooja : February 28th 10.30 PM</li>
+                            <li>3rd Kaala Pooja : March 1st 2.30 AM</li>
+                            <li>4th Kaala Pooja : March 1st 6.00 AM</li>
+                        </ul>
+                        Sponsorship: 
+                        <ul>
+                            <li>1 Kaala Pooja: $35</li>
+                            <li>All Kaala Pooja: $116</li>
+                            <li>Archana: $11</li>
+                            <li>4 Kaala Archana: $35</li>
+                        </ul>
+
+                        For any queries, Please contact us via email at <a href="mailto:seva@saimandir.org?Subject=Query-Shirdi%20Sai%20Mandir" target="_blank">seva@saimandir.org</a> or call us on <a href="tel:+14436367807"><i class="lnr lnr-phone-handset" style="padding-right: 2px;"></i>+1 443 636 7807</a>. 
+                    <br/>
+                </div>
+                <div class="modal-footer" style="display: inline; text-align: center;">
+                  <a href="#" data-dismiss="modal"  class="btn_hover btn_hover_two">Go to Home page</a>
+                  <a href="#donation" data-dismiss="modal" class="btn_hover btn_hover_two" style="font-size: 14px"><i class="fab fa-paypal" style="font-size: 16px">&nbsp</i>Sponsor Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+        <!--================SHIV RATRI Modal Area -- End =================-->
 
 
         <!--================Covid-19 Modal Area =================-->
@@ -676,8 +684,6 @@
                     <h6><a href="https://chat.whatsapp.com/GEWz3LLuxy8LyGbDsLAC9u"><u style="color: blue;">Click Here Join Our WhatsApp Group</u></a></h5>
                 </div>
                 <div class="modal-footer" style="display: inline; text-align: center;">
-                  <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button> -->
                   <a href="#" data-dismiss="modal"  class="btn_hover btn_hover_two">Go to Home page</a>
                 </div>
               </div>
@@ -686,7 +692,7 @@
         <!--================Covid-19 Modal Area =================-->
 
         <!--================Guru Purnima Modal Area =================-->
-        <div class="modal fade" id="gurupurnimaModal" tabindex="-1" role="dialog" data-backdrop="static" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="pujaModal1" tabindex="-1" role="dialog" data-backdrop="static" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header">
@@ -696,8 +702,8 @@
                   </button>
                 </div>
                 <div class="modal-body">
-                    The Sai Mandir Team is closely monitoring Coronavirus (COVID-19). The health and safety of our Sai Devotees are of utmost importance to us. Thus, Sri shiridi Saibaba aarathi and pooja will not be performed at our regular location until further notice.
-                    <b>Amidst the current situation, Shiridi Sai Mandir coordially invites our devotees to our Makar Sankaranthi Event on Saturday, January 16th, 2021 from 6 PM to 8 PM<b>Please <a style="font-size: 14px;" href="https://zoom.us/j/4437550100"><u style="color: blue;">Click Here</u></a> to join the Pooja and get blessed.</b></b>
+                    On the occassion of Ganesh Chaturthi, Sri Shirdi Sai Mandir takes immense pleasure in wishing you all a Happy Ganesh Chaturthi to all our devotees. We also take enormous amount of happiness to invite you all for the puja from September 9th 2021 to September 11th 2021. 
+                    
                     <br/>
                     <h5>One Tap Mobile:</h5>
                     
@@ -720,8 +726,6 @@
                     <h6><a href="https://chat.whatsapp.com/GEWz3LLuxy8LyGbDsLAC9u"><u style="color: blue;">Click Here Join Our WhatsApp Group</u></a></h5>
                 </div>
                 <div class="modal-footer" style="display: inline; text-align: center;">
-                  <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button> -->
                   <a href="#events" data-target="events"  data-dismiss="modal"  class="btn_hover btn_hover_two">Go to Events</a>
                 </div>
               </div>
@@ -762,36 +766,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="single-footer-widget">
-                            <h6 class="footer_title">Newsletter</h6>
-                            <p>For business professionals caught between high OEM price and mediocre print and graphic output, </p>
-                            <div id="mc_embed_signup">
-                                <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="subscribe_form relative">
-                                    <div class="input-group d-flex flex-row">
-                                        <input name="EMAIL" placeholder="Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address '" required="" type="email">
-                                        <button class="btn sub-btn"><span class="lnr lnr-location"></span></button>
-                                    </div>
-                                    <div class="mt-10 info"></div>
-                                </form>
-                            </div>
-                        </div>
-                    </div> -->
-                    <!-- <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="single-footer-widget instafeed">
-                            <h6 class="footer_title">InstaFeed</h6>
-                            <ul class="list_style instafeed d-flex flex-wrap">
-                                <li><img src="image/instagram/Image-01.jpg" alt=""></li>
-                                <li><img src="image/instagram/Image-02.jpg" alt=""></li>
-                                <li><img src="image/instagram/Image-03.jpg" alt=""></li>
-                                <li><img src="image/instagram/Image-04.jpg" alt=""></li>
-                                <li><img src="image/instagram/Image-05.jpg" alt=""></li>
-                                <li><img src="image/instagram/Image-06.jpg" alt=""></li>
-                                <li><img src="image/instagram/Image-07.jpg" alt=""></li>
-                                <li><img src="image/instagram/Image-08.jpg" alt=""></li>
-                            </ul>
-                        </div>
-                    </div>	-->
                 </div>
                 <div class="border_line"></div>
                 <div class="row footer-bottom d-flex justify-content-between align-items-center">
@@ -833,38 +807,9 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
         <script src="js/contact.js"></script>
         <script src="js/custom.js"></script>
+        <script src="js/email.js"></script>
+        <script src="js/mainmenu.js"></script>
         
-        <!-- COVID 19 Modal-->
-        <!-- <script>
-            $(document).ready(function(){
-                var screenWidth = $(screen.width);
-                console.log(screenWidth);
-                if(screen.width < 1000) {
-                    $("#covid19Modal").css("width",screenWidth+"px");
-                    $("#covid19Modal").css("position", "absolute");
-                }
-                $("#covid19Modal").modal('show');
-                
-            });
-        </script> -->
-        <!-- COVID 19 Modal-->
-
-        <!-- Welcome Priest Modal-->
-        <!-- <script>
-            $(document).ready(function(){
-                var screenWidth = $(screen.width);
-                console.log(screenWidth);
-                if(screen.width < 1000) {
-                    $("#welcomePriest").css("width",screenWidth+"px");
-                    $("#welcomePriest").css("position", "absolute");
-                    //$("#covid19Modal").css("text-align", "center");
-                }
-                $("#welcomePriest").modal('show');
-                
-            });
-            
-        </script> -->
-        <!-- Welcome Priest Modal-->
 
         <!-- Ugadhi 2021 -->
         <script>
@@ -872,12 +817,10 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                 var screenWidth = $(screen.width);
                 console.log(screenWidth);
                 if(screen.width < 1000) {
-                    $("#covid19Modal1").css("width",screenWidth+"px");
-                    $("#covid19Modal1").css("position", "absolute");
-                    //$("#covid19Modal").css("text-align", "center");
-                }
-                $("#covid19Modal1").modal('show');
-                
+                    $("#shivModal").css("width",screenWidth+"px");
+                    $("#shivModal").css("position", "absolute");
+                } 
+                $("#shivModal").modal('show');
             });
         </script>
         <!-- Ugadhi 2021 -->
@@ -890,9 +833,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                 if(screen.width < 1000) {
                     $("#gurupurnimaModal").css("width",screenWidth+"px");
                     $("#gurupurnimaModal").css("position", "absolute");
-                    //$("#covid19Modal").css("text-align", "center");
                 }
-                //$("#gurupurnimaModal").modal('show');
                 
             });
             
@@ -924,10 +865,22 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
               });
             });
         </script>
-        <!-- <script type="text/javascript">
-            $(window).on('load',function(){
-                $('#myModal').modal('show');
+        <script>
+            $(document).ready(function(){
+                // Add down arrow icon for collapse element which is open by default
+                $(".collapse.show").each(function(){
+                    $(this).prev(".card-header").find(".fa").addClass("fa-angle-down").removeClass("fa-angle-right");
+                });
+                
+                // Toggle right and down arrow icon on show hide of collapse element
+                $(".collapse").on('show.bs.collapse', function(){
+                    $(this).prev(".card-header").find(".fa").removeClass("fa-angle-right").addClass("fa-angle-down");
+                }).on('hide.bs.collapse', function(){
+                    $(this).prev(".card-header").find(".fa").removeClass("fa-angle-down").addClass("fa-angle-right");
+                });
             });
-        </script> -->
+        </script>
+
+
     </body>
 </html>
