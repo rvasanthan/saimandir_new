@@ -129,8 +129,6 @@
         </header>
         <!--================Header Area =================-->
 
-        
-
         <!--================banner Area =================-->
         <section class="banner_area d-flex text-center" id="home">
             <div class="container align-self-center">
@@ -167,7 +165,8 @@
                             <p>Our Shirdi Sai Mandir of Maryland is a non profit organization established in 2018 by our trustees. Our main goal is to spread the faith, , and spirituality in Howard County area.
                                 Working towards this vision and with the help of our members with ideal and noble motives, we are moving forward with a temple in Howard County, Maryland.
                             </p>
-                            <a href="#services" class="about_btn btn_hover">Read More..</a>
+                            <a href="#services" class="btn_hover btn_hover_two">Read More..</a>
+                            <a href="team.html" class="btn_hover btn_hover_two">Our Sai Mandir Team</a>
                         </div>
                     </div>
                     <div class="col-md-4 about_image">
@@ -508,10 +507,10 @@
                                 </div>
                             </div>
                             <div class="col-md-4 contact_info">
-                                <a href="mailto:contact@saimandir.org?Subject=Query-Shirdi%20Sai%20Mandir">
+                                <a href="mailto:web@saimandir.org?Subject=Query-Shirdi%20Sai%20Mandir">
                                     <div class="info_item">
                                         <i class="lnr lnr-envelope"></i>
-                                        <h6><a href="mailto:contact@saimandir.org?Subject=Query-Shirdi%20Sai%20Mandir">seva@saimandir.org</a></h6>
+                                        <h6><a href="mailto:contact@saimandir.org?Subject=Query-Shirdi%20Sai%20Mandir">web@saimandir.org</a></h6>
                                         <p>Send us your query anytime!</p>
                                     </div>
                                 </a>
@@ -577,12 +576,12 @@
         <!--================Welcoming Our Priest Modal Area -- End =================-->
 
         <!--================Ramanavami 2021-- Start =================-->
-        <div class="modal fade" id="dusheraModal" tabindex="-1" role="dialog" data-backdrop="static" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="dusheraModal" tabindex="-1" role="dialog" data-backdrop="static"    aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
               <div class="modal-content">
                   <div class="modal-header">
                   <h4 class="modal-title" id="exampleModalLabel">Temple Visiting & Guidelines</h4>
-                  <button type="button" class="close" style="color: white;" data-dismiss="modal" aria-label="Close">
+                  <button type="button" class="close" style="color: rgb(95, 87, 87);" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
@@ -605,7 +604,7 @@
                             <li>Please refrain from visiting the temple if you have any symptoms or exposed to covid within the past 10 days.</li>
                         </ul>
                         
-                        For any queries, Please contact us via email at <a href="mailto:seva@saimandir.org?Subject=Query-Shirdi%20Sai%20Mandir" target="_blank">seva@saimandir.org</a> or call us on <a href="tel:+14436367807"><i class="lnr lnr-phone-handset" style="padding-right: 2px;"></i>+1 443 636 7807</a>. 
+                        For any queries, Please contact us via email at <a href="mailto:web@saimandir.org?Subject=Query-Shirdi%20Sai%20Mandir" target="_blank">web@saimandir.org</a> or call us on <a href="tel:+14436367807"><i class="lnr lnr-phone-handset" style="padding-right: 2px;"></i>+1 443 636 7807</a>. 
                     <br/>
                 </div>
                 <div class="modal-footer" style="display: inline; text-align: center;">
@@ -653,7 +652,7 @@
                             <li>4 Kaala Archana: $35</li>
                         </ul>
 
-                        For any queries, Please contact us via email at <a href="mailto:seva@saimandir.org?Subject=Query-Shirdi%20Sai%20Mandir" target="_blank">seva@saimandir.org</a> or call us on <a href="tel:+14436367807"><i class="lnr lnr-phone-handset" style="padding-right: 2px;"></i>+1 443 636 7807</a>. 
+                        For any queries, Please contact us via email at <a href="mailto:web@saimandir.org?Subject=Query-Shirdi%20Sai%20Mandir" target="_blank">seva@saimandir.org</a> or call us on <a href="tel:+14436367807"><i class="lnr lnr-phone-handset" style="padding-right: 2px;"></i>+1 443 636 7807</a>. 
                     <br/>
                 </div>
                 <div class="modal-footer" style="display: inline; text-align: center;">
@@ -829,6 +828,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         <script src="js/custom.js"></script>
         <script src="js/email.js"></script>
         <script src="js/mainmenu.js"></script>
+        <script src="js/breadcrumb.js"></script>
         
 
         <!-- Ugadhi 2021 -->
@@ -837,11 +837,11 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                 var screenWidth = $(screen.width);
                 console.log(screenWidth);
                 if(screen.width < 1000) {
-                    $("#shivModal").css("width",screenWidth+"px");
-                    $("#shivModal").css("position", "absolute");
+                    $("#dusheraModal").css("width",screenWidth+"px");
+                    $("#dusheraModal").css("position", "absolute");
                 } 
                 //$("#spinner-div").hide();
-                //$("#shivModal").modal('show');
+                $("#dusheraModal").modal('show');
             });
         </script>
         <!-- Ugadhi 2021 -->
