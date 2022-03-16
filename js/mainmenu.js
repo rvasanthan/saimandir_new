@@ -8,6 +8,7 @@ class MainMenu extends HTMLElement {
                 <li class="nav-item"><a class="nav-link" href="index.html#services">Services</a></li>
                 <li class="nav-item"><a class="nav-link" href="index.html#events">Events</a></li>
                 <li class="nav-item"><a class="nav-link" href="index.html#faq">FAQ</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#donation">Donate</a></li>
                 <li class="nav-item submenu dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Gallery</a>
                     <ul class="dropdown-menu">
