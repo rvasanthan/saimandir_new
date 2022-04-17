@@ -48,6 +48,7 @@ class SaiMandirHeader extends HTMLElement {
                         <li class="nav-item"><a class="nav-link" href="day1.html">Sai Samasthan Day One</a></li>
                         <li class="nav-item"><a class="nav-link" href="sankranthi.html">Sankranthi</a></li>
                         <li class="nav-item"><a class="nav-link" href="sita-rama.html">Sri Sita Rama Kalyanam</a></li>
+                        <li class="nav-item"><a class="nav-link" href="sita-rama.html">Sri Rama Navami Celebrations</a></li>
                     </ul>
                 </li>
                 <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
