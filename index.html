@@ -68,10 +68,18 @@
     <!--  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
     <link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
+    
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="image/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <script src="js/events.js"></script>    
+    <script src="js/events.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    
+    <!-- <script src="js/jquery-3.2.1.min.js"></script>> -->
+    <!-- Remember to include jQuery :) -->
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script id="setmore_script" type="text/javascript" src="https://my.setmore.com/webapp/js/src/others/setmore_iframe.js"></script>   
 </head>
 
 <body>
@@ -108,8 +116,9 @@
                         <p>He is the force, motivation, and faith of all of us. Right now in Maryland.</p>
                         <a href="#faq" class="btn_hover btn_hover_two">Read FAQs</a>
                         <a href="#donation" class="btn_hover btn_hover_two">Donate</a>
-                        <a href="https://us02web.zoom.us/j/4437550100?pwd=a1ZnTkFjeVdNZXRlYUM5WXVXdm43dz09" class="btn_hover btn_hover_two">Shej Aarathi Live</a>
                         <a href="#subscribe" class="btn_hover btn_hover_two">Be our Family</a>
+                        <a id="Setmore_button_iframe" style="float:none" href="https://booking.setmore.com/scheduleappointment/d0e87164-3c1d-43ff-a0f1-97e6bec17a06" class="btn_hover btn_hover_two" alt="Book an appointment for Pooja Services">Book a Pooja Appointment</a>
+                        <!-- <a id="Setmore_button_iframe" style="float:none" href="https://booking.setmore.com/scheduleappointment/d0e87164-3c1d-43ff-a0f1-97e6bec17a06"><img border="none" src="https://storage.googleapis.com/full-assets/setmore/images/1.0/Settings/book-now-blue.png" alt="Book an appointment using Setmore" /></a> -->
                     </div>
                 </div>
             </div>
@@ -268,10 +277,11 @@
     <section class="event_blog_area section_gap" id="events">
         <div class="container">
             <div class="section_title text-center">
-                <h2>Events</h2>
-                <p>We have numerous upcoming events happening in our temple</p>
+                <h2>Events Calendar</h2>
+                <p>Here is the Events calendar for our Mandir.</p>
             </div>
-            <div class="row">
+            <iframe src="https://calendar.zoho.com/zc/ui/embed/#calendar=ea44cacc9df835a22f99fef056fb21ee985939840f0e83423dad78e7bc0b65c4b077ab8c2e3a3fdab41000088057fdb4&title=Sri%20Shirdi%20Sai%20Mandir%20-%20Events%20Calendar&type=1&language=en&timezone=America%2FNew_York&showTitle=1&showTimezone=1&startingDayOfWeek=0&view=month&showDetail=0&theme=1&showAttendee=0&showSwitchingViews=1&eventColorType=light&showAllEvents=0"width=100% height=700 frameBorder="0" scrolling="no"></iframe>
+            <!-- <div class="row">
                 <div class="col-md-6">
                     <div class="event_post">
                         <img src="https://i.imgur.com/MM3aUxW.jpg?1" height="375px">
@@ -285,7 +295,7 @@
                             <li><i class="lnr lnr-camera-video"></i><a href="https://zoom.us/j/4437550100"><u style="color: blue;">Join Zoom Meeting</u></a></li>
                         </ul>
                     </div>
-                </div> 
+                </div>  -->
                 <!-- <div class="col-md-6">
                     <div class="event_post">
                         <img src="image/ugadi.jpg" height="375px">
@@ -300,21 +310,35 @@
                         </ul>
                     </div>
                 </div> -->
-                
-                <div class="col-md-6">
+                <!-- <div class="col-md-6">
                     <div class="event_post">
-                        <img src="https://res.cloudinary.com/abhinithame/image/upload/v1648606860/Saimandir/ramanavami.png" height="375px">
+                        <img src="https://res.cloudinary.com/sri-shirdi-sai-mandir/image/upload/v1667786793/saimandir.org/Shiva-Linga_wvucrm.png" height="375px" width="700px">
                         <a href="#">
-                            <h2 class="event_title">Rama Navami</h2>
+                            <h2 class="event_title">Kaarthika Poornima- Shiva Abhishekam</h2>
                         </a>
                         <ul class="list_style sermons_category event_category">
-                            <li><i class="lnr lnr-user"></i>April 10 2022, 9.00 AM - 11.00 AM</li>
-                            <li><a href="https://goo.gl/maps/AVKszyCNjF4eF2pW7"><i class="lnr lnr-apartment"></i>Alphabet Montessori School</a></li>
-                            <li><i class="lnr lnr-location"></i>Elkridge, Maryland, USA</li>
+                            <li><i class="lnr lnr-user"></i>November 7 2022, 5.30 PM EST</li>
+                            <li><a href="https://www.google.com/maps/place/12190+Triadelphia+Rd,+Ellicott+City,+MD+21042/@39.2853213,-76.937574,898m/data=!3m2!1e3!4b1!4m5!3m4!1s0x89c826d8b561cd1d:0xa6609fead69c1866!8m2!3d39.2853172!4d-76.9353853"><i class="lnr lnr-apartment"></i>Shirdi Sai Mandir</a></li>
+                            <li><i class="lnr lnr-location"></i>Ellicott City, Maryland, USA</li>
                             <li><i class="lnr lnr-camera-video"></i><a href="https://us02web.zoom.us/j/4437550100?pwd=a1ZnTkFjeVdNZXRlYUM5WXVXdm43dz09"><u style="color: blue;">Join Zoom Meeting</u></a></li>
                         </ul>
                     </div>
                 </div>
+                <div class="col-md-6">
+                    <div class="event_post">
+                        <img src="https://res.cloudinary.com/sri-shirdi-sai-mandir/image/upload/v1667782679/saimandir.org/NicePng_lord-mahavishnu-png_2493765_p10yxx.png" height="375px" width="700px">
+                        <a href="#">
+                            <h2 class="event_title">Sathyanarayana Swami Puja</h2>
+                        </a>
+                        <ul class="list_style sermons_category event_category">
+                            <li><i class="lnr lnr-user"></i>November 7 2022, 6.30 PM EST</li>
+                            <li><a href="https://www.google.com/maps/place/12190+Triadelphia+Rd,+Ellicott+City,+MD+21042/@39.2853213,-76.937574,898m/data=!3m2!1e3!4b1!4m5!3m4!1s0x89c826d8b561cd1d:0xa6609fead69c1866!8m2!3d39.2853172!4d-76.9353853"><i class="lnr lnr-apartment"></i>Shirdi Sai Mandir</a></li>
+                            <li><i class="lnr lnr-location"></i>Ellicott City, Maryland, USA</li>
+                            <li><i class="lnr lnr-camera-video"></i><a href="https://us02web.zoom.us/j/4437550100?pwd=a1ZnTkFjeVdNZXRlYUM5WXVXdm43dz09"><u style="color: blue;">Join Zoom Meeting</u></a></li>
+                        </ul>
+                    </div>
+                </div> -->
+                
                 <!-- <saimandir-event imgsrc="https://i.imgur.com/MM3aUxW.jpg?1" title="Puja Bhajan & Aarthi" schedule="Every Thursday, 7.00PM - 9.00PM" maps="https://www.google.com/maps/place/12190+Triadelphia+Rd,+Ellicott+City,+MD+21042/@39.2853213,-76.937574,898m/data=!3m2!1e3!4b1!4m5!3m4!1s0x89c826d8b561cd1d:0xa6609fead69c1866!8m2!3d39.2853172!4d-76.935385" location="Sri Shirdi Sai Mandir" town="Ellicott City, Maryland, USA" conf="https://zoom.us/j/4437550100"></saimandir-event> -->
 
                 <!-- <div class="col-md-6">
@@ -344,7 +368,20 @@
                         </ul>
                     </div>
                 </div> -->
-            </div>
+                <!-- <div class="col-md-6">
+                    <div class="event_post">
+                        <img src="https://res.cloudinary.com/sri-shirdi-sai-mandir/image/upload/v1667787393/saimandir.org/thanks-giving-food-drive_yjz1sr.png" height="375px">
+                        <a href="#">
+                            <h2 class="event_title">Bala Sai - Thanksgiving Food Drive</h2>
+                        </a>
+                        <ul class="list_style sermons_category event_category">
+                            <li><i class="lnr lnr-user"></i>Until Nov 20 2022</li>
+                            <li><a href="https://www.google.com/maps/place/12190+Triadelphia+Rd,+Ellicott+City,+MD+21042/@39.2853213,-76.937574,898m/data=!3m2!1e3!4b1!4m5!3m4!1s0x89c826d8b561cd1d:0xa6609fead69c1866!8m2!3d39.2853172!4d-76.9353853"><i class="lnr lnr-apartment"></i>Shirdi Sai Mandir</a></li>
+                            <li><i class="lnr lnr-location"></i>Ellicott City, Maryland, USA</li>
+                        </ul>
+                    </div>
+                </div>
+            </div> -->
 
 
 
@@ -1560,46 +1597,53 @@
 
     <!--================SHIV RATRI MODAL -- Start =================-->
     <div class="modal fade" id="shivModal" tabindex="-1" role="dialog" data-backdrop="static" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog mw-70 w-100">
+        <div class="modal-dialog mw-90 w-150">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title" id="exampleModalLabel">Sita Rama Kalyana Mahotsavam</h4>
+                    <h4 class="modal-title" id="exampleModalLabel">New Year Celebrations at Sri Shirdi Sai Mandir</h4>
                     <button type="button" class="close" style="color: rgb(97, 93, 93);" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <br />
                 <div class="col-lg-12">
-                    <!-- <img src="image/ganesh-chaturthi.jpg" class="img-fluid" alt="Responsive image"> -->
-                    <img src="https://res.cloudinary.com/abhinithame/image/upload/v1649263973/Saimandir/pngwing.com_1.png" class="img-fluid" style="width: 700px;height: 400px; align-content: center" alt="Responsive image">
+                    <img src="https://res.cloudinary.com/sri-shirdi-sai-mandir/image/upload/v1672005107/saimandir.org/Untitled_design_5_zqmicx.png" class="img-fluid" style="width: 700px;height: 300px; align-content: center" alt="Responsive image">
                 </div>
-                <br />
+                <br/>
                 <div class="col-md-12">
                     <p style="margin-bottom:-2px">
-                        On the occasion of Sri Rama Navami, Sri Shirdi Sai Mandir takes immense pleasure to invite you and your family for Sita Rama Kalyana Mahotsavam on April 10th 2022 9.30 AM EST. 
-                        <br />
-                        <b>Venue: 6050 Meadowridge Center Dr #100, Elkridge, MD 21075</b>
+                       Sri Shirdi Sai Mandir invites you and your family for the New Year Celebrations at Sri Shirdi Sai Mandir on Jan 1st 2023 8.30 AM EST.</p>
+                    <hr/>
+                    <p style="margin-bottom:-2px; text-align: center;font-weight: bold;">
+                        <b>Schedule</b>
+                    </p>
+                    <p style="margin-bottom:-2px; text-align: center;"> 
                     <ul>
-                        <li>9.30 AM EST  - Sankalpam</li>
-                        <li>9.45 AM EST  - Ganapathi Puja</li>
-                        <li>10.00 AM EST - Punniya Varchana</li>
-                        <li>10.15 AM EST  - Raksha Sootra</li>
-                        <li>10.30 AM EST - Gowri Puja by all ladies</li>
-                        <li>10.45 AM EST - Nuthana vasthra Dharanam</li>
-                        <li>11.00 AM EST  - Kanniya Dhanam</li>
-                        <li>11.15 AM EST   - Subha Muhurtham</li>
-                        <li>11.30 AM EST  - Thalambaralu</li>
-                        <li>11.45 AM EST  - Neerajana Mantra Pushpam</li>
-                        <li>12.00 AM EST  - Maha Mangala Aarathi</li>
+                        <li>Sankalpa, Ganga and Ganesha Pooja - 8.30 AM EST.</li>
+                        <li>Baba Abhishekam and Vibhuthi Archana for baba - 9 AM EST</li>
+                        <li>Ganesha and Baba Moola Manthra Homam - 10 AM EST</li>
+                        <li>Maha Mangalarathi and Prasadam Distribution - 11 AM EST</li>
                     </ul>
-                    <p>Kalyana Sponsorship: $35</p>
-                    
-                    For any queries, Please contact us via email at <a href="mailto:web@saimandir.org?Subject=Query-Shirdi%20Sai%20Mandir" target="_blank">web@saimandir.org</a> or call us on <a href="tel:+14109882299"><i class="lnr lnr-phone-handset" style="padding-right: 2px;"></i>+1 ‎(410) 988-2299</a>.
-                    <br />
+                    <hr/>
+                    <p style="margin-bottom:-2px; text-align: center;font-weight: bold">
+                        <b>Location</b>
+                    </p>
+                    <p style="margin-bottom:-2px; text-align: center;"> <a href="https://www.google.com/maps/place/12190+Triadelphia+Rd,+Ellicott+City,+MD+21042/@39.2853213,-76.937574,898m/data=!3m2!1e3!4b1!4m5!3m4!1s0x89c826d8b561cd1d:0xa6609fead69c1866!8m2!3d39.2853172!4d-76.9353853">12190 Triadelphia Road, Ellicott City, Maryland-21042</a></p>
+                    <hr/>
+                    <p style="margin-bottom:-2px; text-align: center;font-weight: bold">
+                        <b>Sponsorship</b>
+                    </p>
+                    <ul>
+                        <li>Abhishekam - $35</li>
+                        <li>Homam - $35</li>
+                        <li>Flowers - $25</li>
+                        <li>Prasadam - $25</li>
+                        <li>Archana - $21</li>
+                        <li>Whole day pooja Sponsorship - $116</li>
+                    </ul>
                 </div>
                 <div class="modal-footer" style="display: inline; text-align: center;">
-                    <a href="#" data-dismiss="modal" class="btn_hover btn_hover_two">Go to Home page</a>
-                    <a href="#donation" data-dismiss="modal" class="btn_hover btn_hover_two" style="font-size: 14px"><i class="fab fa-paypal" style="font-size: 16px">&nbsp</i>Sponsor Now</a>
+                    <a href="#events" data-dismiss="modal" class="btn_hover btn_hover_two">Go to Events</a>
+                    <a href="#donation" data-dismiss="modal" class="btn_hover btn_hover_two" style="font-size: 14px"><i class="fab fa-paypal" style="font-size: 16px">&nbsp</i>Donate</a>
                 </div>
             </div>
         </div>
@@ -1752,8 +1796,10 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     
-    <script src="js/jquery-3.2.1.min.js"></script>
+    <!-- <script src="js/jquery-3.2.1.min.js"></script>> -->
+    <!-- Remember to include jQuery :) -->
     <script src="js/popper.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
@@ -1762,7 +1808,7 @@
     <script src="js/mail-script.js"></script>
     <script src="js/stellar.js"></script>
     <script src="vendors/lightbox/simpleLightbox.min.js"></script>
-    <script src="vendors/flipclock/timer.js"></script>
+    <!-- <script src="vendors/flipclock/timer.js"></script> -->
     <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
     <script src="js/custom.js"></script>
     <!--gmaps Js-->
@@ -1792,8 +1838,8 @@
                 $("#shivModal").css("position", "absolute");
                 $("#logotext").css("font-size", "19px")
             }
-            //$("#spinner-div").hide();
-            //$("#shivModal").modal('show');
+            $("#spinner-div").hide();
+            $("#shivModal").modal('show');
         });
 
     </script>

@@ -6,7 +6,7 @@ class MainMenu extends HTMLElement {
                 <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="index.html#about">Our Temple</a></li>
                 <li class="nav-item"><a class="nav-link" href="index.html#services">Services</a></li>
-                <li class="nav-item"><a class="nav-link" href="index.html#events">Events</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#events">Calendar</a></li>
                 <li class="nav-item"><a class="nav-link" href="index.html#faq">FAQ</a></li>
                 <li class="nav-item"><a class="nav-link" href="index.html#donation">Donate</a></li>
                 <li class="nav-item submenu dropdown">
