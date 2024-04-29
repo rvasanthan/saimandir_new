@@ -730,10 +730,10 @@ h3 {
 /*============ banner_area css =============*/
 .banner_area {
   min-height: 800px;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(4, 9, 30, 0.8)), to(rgba(4, 9, 30, 0.8))), url("../image/SAITEMPLE.jpg");
-  background: -webkit-linear-gradient(left, rgba(4, 9, 30, 0.8), rgba(4, 9, 30, 0.8)), url("../image/SAITEMPLE.jpg");
-  background: -o-linear-gradient(left, rgba(4, 9, 30, 0.8), rgba(4, 9, 30, 0.8)), url("../image/SAITEMPLE.jpg");
-  background: linear-gradient(to right, rgba(4, 9, 30, 0.8), rgba(4, 9, 30, 0.8)), url("../image/SAITEMPLE.jpg");
+  background: -webkit-gradient(linear, left top, right top, from(rgba(4, 9, 30, 0.8)), to(rgba(4, 9, 30, 0.8))), url("../image/SAIMANDIR.jpg");
+  background: -webkit-linear-gradient(left, rgba(4, 9, 30, 0.8), rgba(4, 9, 30, 0.8)), url("../image/SAIMANDIR.jpg");
+  background: -o-linear-gradient(left, rgba(4, 9, 30, 0.8), rgba(4, 9, 30, 0.8)), url("../image/SAIMANDIR.jpg");
+  background: linear-gradient(to right, rgba(4, 9, 30, 0.8), rgba(4, 9, 30, 0.8)), url("../image/SAIMANDIR.jpg");
   background-size: cover;
 }
 
@@ -3773,4 +3773,8 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   background-color: rgba(255, 255, 255, 0.8);
   z-index: 2;
+}
+
+.mw-70 {
+  max-width: 60%;
 }

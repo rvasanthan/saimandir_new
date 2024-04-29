@@ -4,7 +4,7 @@ class MainMenu extends HTMLElement {
         <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
             <ul class="nav navbar-nav menu_nav ml-auto">
                 <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="index.html#about">Our Temple</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#about">Our Mandir</a></li>
                 <li class="nav-item"><a class="nav-link" href="index.html#services">Services</a></li>
                 <li class="nav-item"><a class="nav-link" href="index.html#events">Calendar</a></li>
                 <li class="nav-item"><a class="nav-link" href="index.html#faq">FAQ</a></li>
