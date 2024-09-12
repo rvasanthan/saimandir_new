@@ -22,7 +22,7 @@
 
         // Background slideshow
         $.backstretch([
-            /*'image/SAITEMPLE.jpg',*/
+
             'assets/images/sai-5.jpg'/*, 
             'assets/images/sai-6.jpg',
             'assets/images/sai-4.jpg',
