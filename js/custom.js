@@ -328,7 +328,7 @@
         map.addMarker({
             lat: $markerLat,
             lng: $markerLon,
-            title: 'Shirdi Sai Mandir, 6050 MeadowRidge Center Drive, Elkridge, MD-21075',
+            title: 'Sri Shirdi Sai Mandir, 9110 Red Branch Rd, Unit P, Columbia, MD-21045',
         });
     }
 
