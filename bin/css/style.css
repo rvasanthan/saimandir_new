@@ -3778,3 +3778,28 @@ h1, h2, h3, h4, h5, h6 {
 .mw-70 {
   max-width: 60%;
 }
+
+#shivModal .col-lg-12,
+#volunteerModal .col-md-12 {
+    display: flex;
+    justify-content: center;
+    align-items: center !important;
+}
+
+#shivModal #modal_image,
+#volunteerModal img.img-fluid {
+    display: block;
+    margin: 0 auto;
+}
+
+.center-image-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-image-div img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
